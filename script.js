@@ -13,21 +13,21 @@ let btn=document.querySelector("#btn")
 		let input=document.querySelector("#ip").value
 		input=parseFloat(input)
 		let output=document.getElementById("output")
-		await delay(2000)
+		await delay(2000, input)
 		output.innerText="Result:"+ input
 		let num=input*2
-		await delay(2000)
+		await delay(2000, num)
 		output.innerText="Result:"+ num
 		let subtract=num-3
-		await delay(1000)
+		await delay(1000, subtract)
 		output.innerText="Result:"+ subtract
 		
 		let divide=subtract/2
-		await delay(1000)
-		output.innerText="Result:"+ devide
+		await delay(1000,divide)
+		output.innerText="Result:"+ divide
 
-	let finalRes=devide+10
-		await delay(1000)
+	let finalRes=divide+ 10
+		await delay(1000,finalRes)
 		output.innerText="Final Result:"+ finalRes
 		
 	})
